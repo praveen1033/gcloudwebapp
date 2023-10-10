@@ -14,10 +14,9 @@
 
 # [START gae_flex_quickstart]
 from flask import Flask
-
+import pandas as pd
 
 app = Flask(__name__)
-
 
 @app.route("/")
 def hello() -> str:
@@ -26,6 +25,7 @@ def hello() -> str:
     Returns:
         A string with the words 'Hello World!'.
     """
+    print('One more line')
     return "Hello World!123"
 
 
