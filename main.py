@@ -25,6 +25,9 @@ def hello() -> str:
     Returns:
         A string with the words 'Hello World!'.
     """
+    games = pd.read_csv('club_games.csv')
+    print(games.loc[1])
+    print(games.loc[5])
     print('One more line')
     return "Hello World!123"
 
